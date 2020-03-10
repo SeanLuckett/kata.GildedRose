@@ -8,7 +8,7 @@ RSpec.describe GildedRose do
       items = [item]
       
       GildedRose.new(items).update_quality
-      expect(items[0].name).to eq item.name
+      expect(items.first.name).to eq item.name
     end
   end
 
